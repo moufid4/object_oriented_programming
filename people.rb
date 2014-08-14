@@ -18,3 +18,13 @@ class Instructor
 
 
 end
+
+# Step 4 : Create a Person class with the attribute name and an initializer
+class Person(name)
+
+	def initializer
+	end
+
+
+
+end
