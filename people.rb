@@ -1,6 +1,7 @@
 class Student
+attr_accessor :name
 
-	# Step 2 : The student class has a method called learn that outputs "I get it!"
+# Step 2 : The student class has a method called learn that outputs "I get it!"
 	def learn
 
 		puts "I get it!"
@@ -11,7 +12,7 @@ end
 
 class Instructor
 
-	# Step 3 : The instructor class has a method called teach that outputs "Everything in Ruby is an Object".
+# Step 3 : The instructor class has a method called teach that outputs "Everything in Ruby is an Object".
 	def teach
 		puts "Everything in Ruby is an Object"
 	end
@@ -20,11 +21,22 @@ class Instructor
 end
 
 # Step 4 : Create a Person class with the attribute name and an initializer
-class Person(name)
+class Person
+	attr_accessor :name
 
-	def initializer
+	def initialize(name)
+		@name = name
+	end
+
+# Step 6 : create an instructor instance (Chris) to do a greeting
+	def greeting
+		puts "Hi, my name is #{name}"
+	
 	end
 
 
 
 end
+
+Chris = Person.new('Chris')
+Chris.greeting
