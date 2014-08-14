@@ -37,6 +37,12 @@ class Person
 
 
 end
-
+# Initialize class Person for Chris
 Chris = Person.new('Chris')
+
 Chris.greeting
+
+# Initialize class Person for Cristina
+Cristina = Person.new('Cristina')
+
+Cristina.greeting
