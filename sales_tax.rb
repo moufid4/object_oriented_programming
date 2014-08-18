@@ -27,9 +27,9 @@ class SalesTax
 	
 			puts "Item Name" + "_______________" + "Price"
 	  		@chosen_items.each do |item_key|
-	  		puts "\n"
+	  		#puts "\n"
 	  		puts "#{@products[item_key][0]}" + "________" + "#{@products[item_key][1]}"
-	  		puts "\n"
+	  		#puts "\n"
 	  		end
 	 		puts "\n"
 	 		puts "Total price #{@total_price}  |  Total taxes #{@total_duty + @total_tax}"				
